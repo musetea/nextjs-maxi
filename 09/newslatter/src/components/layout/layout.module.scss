@@ -1,0 +1,69 @@
+.header {
+	width: 100%;
+	height: 5rem; /*80px*/
+	padding: 1rem 10%;
+
+	background-color: #202020;
+
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+
+	// 로그영역
+	.logo {
+		height: 100%;
+
+		display: flex;
+		align-items: center;
+
+		font-size: 1.5rem;
+		font-family: "Fira", serif;
+		a {
+			font: inherit;
+			color: #94fdfd;
+		}
+	}
+
+	// 네비게이션
+	.navigation {
+		font-size: 1rem;
+		a {
+			font: inherit;
+			color: #74dacc;
+		}
+
+		ul {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+
+			li {
+				padding: 0.25rem 0.5rem;
+
+				&:hover,
+				&:active {
+					border: 1px solid #94fdfd;
+				}
+				&.active {
+					border: 1px solid #94fdfd;
+
+					a {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		.logo {
+			font-size: 2.5rem;
+		}
+
+		.navigation {
+			font-size: 1.5rem;
+		}
+	}
+}

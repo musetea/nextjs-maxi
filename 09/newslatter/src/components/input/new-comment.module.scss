@@ -1,0 +1,44 @@
+// New Commnet
+.form {
+	width: 100%;
+	margin: 2rem auto;
+	padding: 1rem;
+	background-color: #03be9f;
+	border-radius: 6px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	button {
+		background-color: white;
+	}
+}
+
+// InputBox
+.control {
+	flex: 1;
+	min-width: 10rem; /*160px*/
+	margin-bottom: 0.5rem;
+
+	label {
+		display: block;
+		margin-bottom: 0.5rem;
+		font-weight: bold;
+		color: white;
+		text-align: left;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 0.25rem; /*4px*/
+		font: inherit;
+		background-color: #dcfff9;
+		border: 1px solid #ccc;
+		border-radius: 0.25rem;
+	}
+}

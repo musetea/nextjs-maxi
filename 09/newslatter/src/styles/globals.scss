@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	--button-color: #dafff7;
+	--button-bg-color: #03be9f;
+	--button-active-color: #02afa1;
+
+	/* 6px */
+	--border-radius: 0.375rem; /*6px*/
+
+	// alert
+	--alert-bg-color: #d5bdfc;
+	--alert-color: #38028d;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+}
