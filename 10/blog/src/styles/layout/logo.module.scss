@@ -1,0 +1,20 @@
+.logo {
+	font-family: "Oswald", sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+
+	text-transform: uppercase;
+
+	h1 {
+		font: inherit;
+		color: var(--color-gray-50);
+	}
+}
+
+@media (min-width: 768px) {
+	.logo {
+		h1 {
+			font-size: 2rem;
+		}
+	}
+}

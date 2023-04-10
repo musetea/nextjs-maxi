@@ -1,0 +1,34 @@
+.menus {
+	display: flex;
+	align-items: baseline;
+	gap: 1rem;
+
+	li {
+		margin: 0 0.75rem;
+
+		a {
+			font-size: 1rem;
+			color: var(--color-gray-100);
+
+			&:hover,
+			&:active {
+				color: var(--color-gray-200);
+			}
+		}
+		&.active {
+			a {
+				color: red;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.menus {
+		gap: 0.5rem;
+	}
+
+	.menus a {
+		font-size: 1.25rem;
+	}
+}
