@@ -13,7 +13,7 @@ export const getClient = async () => {
 	return connection;
 };
 
-const getCollection = async <T>(
+export const getCollection = async <T>(
 	cli: MongoClient,
 	dbName: string,
 	collectionName: string

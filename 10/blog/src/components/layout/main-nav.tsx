@@ -14,6 +14,7 @@ const menus: MenuItemType[] = [
 	{ href: "/profile", caption: "Profile" },
 	{ href: "/auth/signup", caption: "SingUp" },
 	{ href: "/auth/user", caption: "User" },
+	{ href: "/meetup", caption: "MeetUp" },
 ];
 
 const MainNavigation = () => {
@@ -22,7 +23,7 @@ const MainNavigation = () => {
 	console.log(session, status);
 
 	const menuItems = menus.map(menu => {
-		const cls = router.pathname === menu.href ? classes.active : "";
+		const cls = router.pathname.includes(menu.href) ? classes.active : "";
 		return (
 			<li key={menu.href} className={cls}>
 				<Link href={menu.href}>{menu.caption}</Link>

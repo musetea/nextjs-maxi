@@ -7,6 +7,10 @@ const nextConfig = (phase, { defaultConfig }) => {
 		return {
 			reactStrictMode: true,
 			env: {},
+
+			images: {
+				domains: ["thumbs.dreamstime.com"],
+			},
 		};
 	}
 

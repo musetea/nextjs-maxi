@@ -62,3 +62,17 @@ const NotifycationContext = createContext(defaultValue);
 // 	);
 // };
 export default NotifycationContext;
+
+export const getResultType = (result: string) => {
+	let status: NotifycationStatusType = NotifycationStatusType.none;
+	switch (result) {
+		case "fail":
+			status = NotifycationStatusType.error;
+			break;
+		case "success":
+			status = NotifycationStatusType.success;
+			break;
+	}
+	console.log(status);
+	return status;
+};
